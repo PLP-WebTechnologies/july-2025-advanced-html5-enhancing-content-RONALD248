@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 70%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #eeebf3;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 2px solid #0c0c0c;
+      padding: 8px;
+      text-align: left;
+    }
+    img, video {
+      max-width: 50%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Ronald.Web Solutions Ltd</h1>
+    <p>Your one-stop solution for web development and digital marketing.</p>
+    <h2>User Information Portal</h2>
+    <p>Please fill out the form below to register. Make sure all information is accurate.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" required></textarea>
+
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com" />
+
+        <label>
+          <input type="checkbox" name="agree" required />
+          I agree to the terms and conditions.
+        </label>
+
+        <label for="readonly">Referral Code:</label>
+        <input type="text" id="readonly" value="AUTOGEN123" readonly />
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="file">Upload ID (PDF or Image):</label>
+        <input type="file" id="file" name="file" accept=".pdf,image/*" required />
+
+        <label for="range">Satisfaction (1-10):</label>
+        <input type="range" id="range" name="satisfaction" min="1" max="10" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="preferred_time" />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" list="country-list" placeholder="Start typing..." />
+        <datalist id="country-list">
+          <option value="Kenya"></option>
+          <option value="Uganda"></option>
+          <option value="Tanzania"></option>
+          <option value="Nigeria"></option>
+        </datalist>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Web Design and Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+        <li>SEO Optimization</li>
+        <li>Branding Solutions</li>
+        <li>Social Media Management</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pricing Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price(Full_Time)</th>
+            <th>Duration</th>
+            <th>Tool</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Design and Development</td>
+            <td>Ksh.4000</td>
+            <td>3 Months</td>
+            <td>VS code</td>
+          </tr>
+          <tr>
+            <td>Graphic Design</td>
+            <td>Ksh.1000</td>
+            <td>1 Month</td>
+            <td>Adobe Photoshop</td>
+          </tr>
+          <tr>
+            <td>Digital Marketting</td>
+            <td>Ksh.2000</td>
+            <td>2 Months</td>
+            <td>Odoo Marketting App</td>
+          </tr>
+          <tr>
+            <td>SEO Optimization</td>
+            <td>Ksh.1500</td>
+            <td>1 Month</td>
+            <td>Code Editor</td>
+          </tr>
+          <tr>
+            <td>Branding Solutions</td>
+            <td>Ksh.2500</td>
+            <td>2 Months</td>
+            <td>Canva</td>
+          </tr>
+            <tr>
+                <td>Social Media Management</td>
+                <td>Ksh.1000</td>
+                <td>1 Month</td>
+                <td>Hootsuite</td>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Our Team in Action</h2>
+
+      <img src="wokers.jpg" alt="Our team at work">
+      
+        <p>See our team in action:</p>
+       
+    </section>
+
+      <section>
+      <p>Watch our team working on various projects:</p>
+      <video width="450" controls>
+        <source src="worker.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ronald.Web Solutions Ltd. | Contact: info@ronald.websolutions.com</p>
+  </footer>
+
+</body>
+</html>
